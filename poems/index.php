@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1> Poems </h1>
+    <h1 class="title"> Poems </h1>
     <p> Below is a number of poems I've written over the years (most of which I'm still proud of). Some are humorous, some are depressing, and some are just weird, but I hope you enjoy! </p>
 
     <?php

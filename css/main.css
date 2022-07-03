@@ -2,7 +2,7 @@
 :root {
   --link-color: #d10069;
   --link-color-used: #d10069;
-  --background: white;
+  --background: #EEEEEE;
   --text-color: black; }
 
 @media (prefers-color-scheme: dark) {
@@ -54,5 +54,19 @@ aside {
 
 #fursona {
   width: 250px; }
+
+.gallery img {
+  max-height: 30vh; }
+.gallery div {
+  display: flex; }
+
+.homepage .container {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center; }
+  .homepage .container .section span {
+    line-break: 10px; }
 
 /*# sourceMappingURL=main.css.map */

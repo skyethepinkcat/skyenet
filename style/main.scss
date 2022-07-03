@@ -77,12 +77,28 @@ aside {
 }
 
 .gallery {
-  img {
-    max-height = 30vh;
-  }
+    img {
+        max-height: 30vh;
+    }
 
-  div {
-    display: flex;
-  }
+    div {
+        display: flex;
+    }
 
+}
+
+
+.homepage {
+    .container {
+        margin-left : 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        text-align: center;
+        .section {
+            span {
+                line-break: 10px;
+            }
+        }
+    }
 }

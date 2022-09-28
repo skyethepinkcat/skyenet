@@ -2,15 +2,18 @@
 :root {
   --link-color: #d10069;
   --link-color-used: #d10069;
-  --background: white;
-  --text-color: black; }
+  --background: #EEEEEE;
+  --text-color: black;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
     --link-color: hotpink;
     --link-color-used: hotpink;
     --background: black;
-    --text-color: white; } }
+    --text-color: white;
+  }
+}
 body {
   background-color: var(--background);
   color: var(--text-color);
@@ -19,40 +22,66 @@ body {
   overflow: auto;
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-bottom: 10vh; }
+  margin-bottom: 10vh;
+}
 
 a {
-  color: var(--link-color); }
+  color: var(--link-color);
+}
 
 #content {
   margin-top: 1vh;
-  margin-bottom: 1vh; }
+  margin-bottom: 1vh;
+}
 
 .title {
-  text-align: center; }
+  text-align: center;
+}
 
 .links {
-  text-align: right; }
+  text-align: right;
+}
 
 .lalign {
-  text-align: left; }
+  text-align: left;
+}
 
 .ralign {
-  text-align: right; }
+  text-align: right;
+}
 
 .about {
-  width: 50vw; }
+  width: 50vw;
+}
 
 aside {
   float: right;
   border-style: solid;
   border-color: var(--link-color);
   padding: 5px;
-  text-align: center; }
-  aside img {
-    margin-right: 0; }
+  text-align: center;
+}
+aside img {
+  margin-right: 0;
+}
 
 #fursona {
-  width: 250px; }
+  width: 250px;
+}
+
+#fursona-appearance {
+  width: 100%;
+}
+
+#ref {
+  max-width: 100%;
+}
+
+.gallery img {
+  max-height: 30vh;
+}
+.gallery div {
+  display: flex;
+}
 
 /*# sourceMappingURL=main.css.map */

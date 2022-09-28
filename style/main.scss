@@ -75,10 +75,16 @@ aside {
 #fursona {
     width: 250px;
 }
+#fursona-appearance {
+    width: 100%;
+}
+#ref {
+    max-width: 100%;
+}
 
 .gallery {
   img {
-    max-height = 30vh;
+    max-height: 30vh;
   }
 
   div {

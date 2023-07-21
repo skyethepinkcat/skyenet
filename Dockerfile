@@ -14,7 +14,7 @@ RUN mkdir /home/app/webapp
 
 COPY Gemfile /root/Gemfile
 
-RUN bundle install --gemfile //Gemfile
+RUN bundle install --gemfile /root/Gemfile
 
 COPY --chown=app:app . /home/app/webapp
 

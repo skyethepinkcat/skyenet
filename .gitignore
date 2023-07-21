@@ -1,2 +1,4 @@
 tags*
 .sass-cache/
+passenger*
+Gemfile.lock

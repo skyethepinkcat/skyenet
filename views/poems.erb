@@ -12,15 +12,11 @@
         I'm still proud of). Some are humorous, some are depressing, and some
         are just weird, but I hope you enjoy! </p>
 
-    <%
-    files = Dir.glob("*.txt") %>
-  <% for f in files 
-       file = File.open(f) %>
+  <% for poem in poems %>
                 <details>
-                    <summary> <%= file.readline.strip %> </summary>
-                    <a href="<%=f%>"> Download </a> <br>
-                    <pre> <% for l in file.readlines.drop 1 %>
-                        <%= l.strip %> <% end %></pre>
+                    <summary> <%= poem[:title] %> </summary>
+                    <a href="<%= poem[:url] %>"> Download </a> <br>
+                    <pre> <%= poem[:body] %> </pre>
                 </details>
     <% end %>
 </body>

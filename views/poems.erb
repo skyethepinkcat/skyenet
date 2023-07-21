@@ -13,11 +13,8 @@
         are just weird, but I hope you enjoy! </p>
 
   <% for poem in poems %>
-                <details>
-                    <summary> <%= poem[:title] %> </summary>
-                    <a href="<%= poem[:url] %>"> Download </a> <br>
-                    <pre> <%= poem[:body] %> </pre>
-                </details>
+    <%= poem %>
+
     <% end %>
 </body>
 

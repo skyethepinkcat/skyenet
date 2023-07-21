@@ -17,11 +17,7 @@ get '/poems/:name?' do
 
     poem[:url] = File.basename(f)
     poem[:title] = lines[0]
-    if params['name'] != nil
-      poem[:open] = (params['name'].downcase == poem[:title].downcase.strip)
-    else
-      poem[:open] = false
-    end
+    poem[:open] = (params['name'] != nil && params['name'].downcase == poem[:title].downcase.strip)
 
     poem[:body] = "<a href='/poems/#{poem[:title]}'> Share </a><br><pre>" + lines.drop(2).join() + "</pre>"
 

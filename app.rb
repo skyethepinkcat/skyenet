@@ -1,4 +1,9 @@
 require 'sinatra'
+require 'sassc'
+
+scss = File.open("style/main.scss").readlines.join("\n")
+
+css = SassC::Engine.new(scss, style: :compressed).render
 
 enable :sessions
 
@@ -17,4 +22,9 @@ get '/poems/' do
     poems.push(poem)
   end
   erb :poems, :locals => {:poems => poems}
+end
+
+get '/css/main.css' do
+  content_type 'text/css', :charset => 'utf-8'
+  css
 end

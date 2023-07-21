@@ -14,4 +14,6 @@ RUN mkdir /home/app/webapp
 
 COPY --chown=app:app . /home/app/webapp
 
+RUN bundle install --gemfile /home/app/webapp/Gemfile
+
 CMD ["/sbin/my_init"]

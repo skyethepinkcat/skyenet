@@ -12,10 +12,11 @@ ADD docker/webapp.conf /etc/nginx/sites-enabled/webapp.conf
 
 RUN mkdir /home/app/webapp
 
-COPY Gemfile . /root/Gemfile
+COPY Gemfile /root/Gemfile
 
-RUN bundle install --gemfile /root/Gemfile
+RUN bundle install --gemfile //Gemfile
 
 COPY --chown=app:app . /home/app/webapp
+
 
 CMD ["/sbin/my_init"]
